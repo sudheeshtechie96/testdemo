@@ -8,7 +8,9 @@ pipeline{
     }
     stage('Two'){
       steps {
-        echo 'This is the stage two'
+        sh '''#!/bin/bash
+              uptime
+              '''
       }
    }
     stage('Three'){
