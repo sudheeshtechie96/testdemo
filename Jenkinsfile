@@ -15,7 +15,7 @@ pipeline{
    }
     stage('Three'){
       steps {
-        dcoker push ubuntu
+        docker push ubuntu
       }
     }
     stage('Four'){
