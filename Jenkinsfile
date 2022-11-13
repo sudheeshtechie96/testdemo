@@ -15,7 +15,7 @@ pipeline{
    }
     stage('Three'){
       steps {
-        echo 'This is the stage three'
+        dcoker push ubuntu
       }
     }
     stage('Four'){
