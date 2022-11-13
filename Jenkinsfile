@@ -5,28 +5,28 @@ pipeline{
       steps{
         echo "Hi Sudheesh"
       }
-      stage('Two'){
+    stage('Two'){
         steps{
         sh '''#!/bin/bash
             uptime
            '''
         }
       }
-        stage('Three'){
+    stage('Three'){
           steps{
           echo "This is the third stage"
           }
         }
-      stage('Four'){
+    stage('Four'){
         steps{
           echo "This is the Fourth stage"
         }
         }
-      stage('Fifth'){
+    stage('Fifth'){
         steps{
           echo "This is the Fifth stage"
         }
-        }
+      }
     }
   }
 }
