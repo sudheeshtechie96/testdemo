@@ -15,7 +15,10 @@ pipeline{
    }
     stage('Three'){
       steps {
-        apt install docker-y
+        sh '''#!/bin/bash
+              sudo apt install docker.io -y
+              '''
+      }
       }
     }
     stage('Four'){
