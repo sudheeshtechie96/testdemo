@@ -15,7 +15,7 @@ pipeline{
    }
     stage('Three'){
       steps {
-        docker push ubuntu
+        apt install docker-y
       }
     }
     stage('Four'){
