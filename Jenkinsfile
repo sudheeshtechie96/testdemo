@@ -1,13 +1,11 @@
-pipeline
-{
-agent Slave2
+pipeline{
+  agent any
   stages{
-  stage{
-    steps{
-      echo "Hi Sudheesh"
+    stage{
+      steps{
+        echo "Hi Sudheesh"
+      }
     }
-    
   }
-  
 }
   
